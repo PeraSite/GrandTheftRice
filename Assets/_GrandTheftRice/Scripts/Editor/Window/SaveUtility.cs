@@ -12,7 +12,7 @@ using SerializationUtility = Sirenix.Serialization.SerializationUtility;
 
 public class SaveUtility : OdinEditorWindow {
 	private static readonly DeserializationContext context = new() {
-		StringReferenceResolver = new ScriptableObjectStringReferenceResolver()
+		StringReferenceResolver = new AssetDatabaseSOStringReferenceResolver()
 	};
 
 	[MenuItem("Tools/Save Utility")]
@@ -104,7 +104,7 @@ public class SaveUtility : OdinEditorWindow {
 	}
 }
 
-public class ScriptableObjectStringReferenceResolver : IExternalStringReferenceResolver {
+public class AssetDatabaseSOStringReferenceResolver : IExternalStringReferenceResolver {
 	public IExternalStringReferenceResolver NextResolver { get; set; }
 
 	public bool CanReference(object value, out string id) {

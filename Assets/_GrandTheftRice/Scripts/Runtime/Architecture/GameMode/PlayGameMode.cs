@@ -4,7 +4,7 @@ using PixelCrushers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class PlayGameMode : GameModeBase {
 		private GameModeState _state = GameModeState.ENDED;
 

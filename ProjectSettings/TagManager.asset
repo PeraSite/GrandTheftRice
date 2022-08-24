@@ -11,11 +11,11 @@ TagManager:
   - 
   - Water
   - UI
+  - Floor
   - 
   - 
-  - Card
-  - Ally
-  - Enemy
+  - 
+  - 
   - 
   - 
   - 
@@ -44,15 +44,12 @@ TagManager:
   - name: Background
     uniqueID: 548162949
     locked: 0
-  - name: Characters
+  - name: Foreground
     uniqueID: 223935015
+    locked: 0
+  - name: Character
+    uniqueID: 2456151967
     locked: 0
   - name: UI
     uniqueID: 4018113369
-    locked: 0
-  - name: Cards
-    uniqueID: 1437447475
-    locked: 0
-  - name: Topmost
-    uniqueID: 221337439
     locked: 0

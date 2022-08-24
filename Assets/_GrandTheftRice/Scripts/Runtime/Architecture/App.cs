@@ -3,7 +3,7 @@ using Sirenix.Utilities;
 using UnityEngine;
 using Object = UnityEngine.Object;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public static class App {
 		public static bool isEditor = false;
 

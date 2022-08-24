@@ -64,7 +64,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1272b5fecead489a8e61998c958326fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Cache: {fileID: 11400000, guid: 0d4f8dc7784649f4cab7da4c1c8b6035, type: 2}
+  Cache: {fileID: 11400000, guid: f65cdcb4351525f4abe3214f962cf18e, type: 2}
   Format: 1
 --- !u!114 &9060094528215211501
 MonoBehaviour:
@@ -319,7 +319,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 1847
+    m_Bits: 55
 --- !u!1 &6585809376086838268
 GameObject:
   m_ObjectHideFlags: 0

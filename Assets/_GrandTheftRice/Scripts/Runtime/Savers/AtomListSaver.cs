@@ -5,7 +5,7 @@ using PixelCrushers;
 using UnityAtoms;
 using UnityEngine;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class AtomListSaver : Saver {
 		public List<BaseAtomValueList> List;
 

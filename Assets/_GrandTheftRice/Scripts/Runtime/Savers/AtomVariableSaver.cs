@@ -4,7 +4,7 @@ using PixelCrushers;
 using Sirenix.Utilities;
 using UnityAtoms;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class AtomVariableSaver : Saver {
 		public List<AtomBaseVariable> Variables;
 

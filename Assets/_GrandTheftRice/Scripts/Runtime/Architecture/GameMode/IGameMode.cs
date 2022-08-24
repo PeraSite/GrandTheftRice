@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public interface IGameMode {
 		IEnumerator OnStart();
 		IEnumerator OnEditorStart();

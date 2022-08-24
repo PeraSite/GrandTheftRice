@@ -4,7 +4,7 @@ using PixelCrushers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class GameModeManager : MonoSingleton<GameModeManager> {
 		public MainMenuGameMode mainMenuMode;
 		public PlayGameMode playMode;

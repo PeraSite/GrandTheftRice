@@ -5,7 +5,7 @@ using PixelCrushers;
 using UnityAtoms.BaseAtoms;
 using UnityEngine;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class FadeSceneTransitionManager : SceneTransitionManager {
 		public CanvasGroup Fade;
 		public float AnimationTime;

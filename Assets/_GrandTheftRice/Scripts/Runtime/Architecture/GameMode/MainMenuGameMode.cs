@@ -2,7 +2,7 @@
 using PeraCore.Runtime;
 using PixelCrushers;
 
-namespace UnityTemplate {
+namespace GrandTheftRice {
 	public class MainMenuGameMode : GameModeBase {
 		[SceneSelector]
 		public string mainMenuScene;

@@ -1,4 +1,4 @@
-﻿namespace UnityTemplate {
+﻿namespace GrandTheftRice {
 	public enum GameModeState {
 		LOADING,
 		STARTING,
