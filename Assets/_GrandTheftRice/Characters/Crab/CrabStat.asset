@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4274e7441924ae8a52c0bd6aee488bb, type: 3}
   m_Name: CrabStat
   m_EditorClassIdentifier: 
-  <Health>k__BackingField: 4
+  <Health>k__BackingField: 3
   <MoveSpeed>k__BackingField: 2
