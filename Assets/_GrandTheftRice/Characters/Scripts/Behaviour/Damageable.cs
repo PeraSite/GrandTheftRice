@@ -9,7 +9,10 @@ namespace GrandTheftRice {
 		[InlineEditor(InlineEditorObjectFieldModes.Foldout)]
 		[SerializeField] private CharacterStat _stat;
 
-		[field: Title("런타임 정보"), ReadOnly]
+		[field: Title("런타임 정보"),
+		        OnValueChanged(nameof(InvokeHealthChanged)),
+		        InlineButton("@Damage(1)", "Damage"),
+		        InlineButton("@Heal(1)", "Heal")]
 		[field: SerializeField] public float Health { get; private set; }
 
 		public float MaxHealth => _stat.MaxHealth;
@@ -26,7 +29,7 @@ namespace GrandTheftRice {
 			InvokeHealthChanged();
 		}
 
-		public void Heal(int amount) => Damage(-amount);
+		public void Heal(float amount) => Damage(-amount);
 
 		private void InvokeHealthChanged() {
 			//if health is equals or less than 0, then destroy this object
