@@ -1,17 +1,18 @@
-﻿using System;
-using DG.Tweening;
+﻿using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GrandTheftRice.MainMenu {
 	public class MainMenuUI : MonoBehaviour {
+		[Title("카메라 위치")]
 		[SerializeField] private Vector3 _defaultCameraPosition;
 		[SerializeField] private Vector3 _settingCameraPosition;
 		[SerializeField] private Vector3 _rankingCameraPosition;
 
-
-		private Camera _cam;
+		[Title("애니메이션 설정")]
 		[SerializeField] private float _animationDuration = 0.5f;
+		
+		private Camera _cam;
 
 		private void Awake() {
 			_cam = Camera.main;
