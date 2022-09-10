@@ -2,7 +2,7 @@
 using Sirenix.OdinInspector;
 using UnityEngine;
 
-namespace GrandTheftRice.MainMenu {
+namespace GrandTheftRice.UI {
 	public class MainMenuUI : MonoBehaviour {
 		[Title("카메라 위치")]
 		[SerializeField] private Vector3 _defaultCameraPosition;
