@@ -1,13 +1,13 @@
-﻿using Sirenix.OdinInspector;
+﻿using System.Collections.Generic;
+using System.Linq;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GrandTheftRice {
-	public class DamageOnCollide : MonoBehaviour {
+	public class DestroyOnCollide : MonoBehaviour {
 		[Title("설정")]
-		[SerializeField] private float _damage = 1;
 		[SerializeField] private bool _useTrigger;
-
-		[SerializeField] private string _tagToDamage = "Player";
+		[SerializeField] private List<string> _targetTags;
 
 		private void OnTriggerEnter2D(Collider2D col) {
 			if (!_useTrigger) return;
@@ -20,10 +20,9 @@ namespace GrandTheftRice {
 		}
 
 		private void OnHit(GameObject go) {
-			if (!go.TryGetComponent<Damageable>(out var damageable)) return;
-			if (!damageable.CompareTag(_tagToDamage)) return;
+			if (!_targetTags.Any(go.CompareTag)) return;
 
-			damageable.Damage(_damage);
+			Destroy(gameObject);
 		}
 	}
 }

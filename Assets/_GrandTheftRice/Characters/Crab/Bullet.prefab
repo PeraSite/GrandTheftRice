@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7256882689591543933}
   - component: {fileID: -8984769868598386830}
   - component: {fileID: -8413716926802108206}
+  - component: {fileID: 3581948960152460308}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Untagged
@@ -135,7 +136,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 1
-  _destroyOnCollide: 1
   _useTrigger: 1
   _tagToDamage: NPC
 --- !u!58 &-8413716926802108206
@@ -154,3 +154,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &3581948960152460308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7256882689591543921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 877796cfd4004380b610b3a0a3120f9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _useTrigger: 1
+  _targetTags:
+  - NPC
+  - Obstacle
