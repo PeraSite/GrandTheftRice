@@ -9,8 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bab55dc264b24485bef6bd8aafb4a04d, type: 3}
-  m_Name: PlayGameMode
+  m_Script: {fileID: 11500000, guid: 5624c6c5ad542604ab9f27076e5676d7, type: 3}
+  m_Name: PlayGamemode
   m_EditorClassIdentifier: 
   playScene: Play
   activeSlotID: 1

@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd7685bc808e4febb5e19bce7a7e77aa, type: 3}
-  m_Name: MainGameMode
+  m_Script: {fileID: 11500000, guid: b3a988c1907240647a6229fa9867fe4d, type: 3}
+  m_Name: MainMenuGamemode
   m_EditorClassIdentifier: 
   mainMenuScene: MainMenu

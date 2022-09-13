@@ -96,7 +96,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Fade: {fileID: 5829722549552839319}
   AnimationTime: 0.5
-  IsFading: {fileID: 11400000, guid: c0c1f1cc38e1d97489f95c40b19a7fdc, type: 2}
+  IsFading: {fileID: 11400000, guid: 2b1aa1351e3cac9409e489b453157ed6, type: 2}
 --- !u!1 &890861078418784032
 GameObject:
   m_ObjectHideFlags: 0
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4280915137808208943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5856ed01fbe04c52829c9154cad0d064, type: 3}
+  m_Script: {fileID: 11500000, guid: 570a1c829f41b294a80471ff605e9730, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   serializationData:
@@ -217,8 +217,8 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes: []
-  mainMenuMode: {fileID: 11400000, guid: 316c917c1891a6348af26857414103b1, type: 2}
-  playMode: {fileID: 11400000, guid: bebf96a0d9ac2d340beea169f263a73e, type: 2}
+  mainMenuMode: {fileID: 11400000, guid: 187d964461680d84ea5ca52b26696ee2, type: 2}
+  playMode: {fileID: 11400000, guid: f5edf1fe839183e41af96cc0148728f2, type: 2}
 --- !u!1 &5984810428435947436
 GameObject:
   m_ObjectHideFlags: 0
