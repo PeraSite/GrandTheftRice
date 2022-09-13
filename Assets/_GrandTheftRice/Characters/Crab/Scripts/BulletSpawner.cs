@@ -16,6 +16,7 @@ namespace GrandTheftRice {
 
 		public void OnFire(InputAction.CallbackContext ctx) {
 			if (ctx.started) {
+				//TODO: 연타 시 계속 발사하는 문제 수정해야함
 				StartCoroutine(nameof(Shoot));
 			}
 

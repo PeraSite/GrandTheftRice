@@ -386,6 +386,7 @@ GameObject:
   - component: {fileID: 356685133}
   - component: {fileID: 356685132}
   - component: {fileID: 356685131}
+  - component: {fileID: 356685134}
   m_Layer: 5
   m_Name: "\uAC8C\uC784 \uC2DC\uC791"
   m_TagString: Untagged
@@ -457,7 +458,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 356685132}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 356685134}
+        m_TargetAssemblyTypeName: PixelCrushers.SaveSystemMethods, PixelCrushers
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: NameSetting
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &356685132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -496,6 +509,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 356685129}
   m_CullTransparentMesh: 1
+--- !u!114 &356685134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 356685129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ef632813c244a5a9d06c88e737932a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultStartingSceneName: 
 --- !u!1 &444751983
 GameObject:
   m_ObjectHideFlags: 0

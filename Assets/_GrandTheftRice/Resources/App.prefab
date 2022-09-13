@@ -146,7 +146,8 @@ MonoBehaviour:
   m_appendSaverTypeToKey: 0
   m_saveAcrossSceneChanges: 1
   m_restoreStateOnStart: 0
-  Variables: []
+  Variables:
+  - {fileID: 11400000, guid: 4685a440ac673474cb58223e7be4addd, type: 2}
 --- !u!114 &1341064735569857419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +279,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 999
   m_TargetDisplay: 0
 --- !u!114 &6251297990761278399
 MonoBehaviour:
