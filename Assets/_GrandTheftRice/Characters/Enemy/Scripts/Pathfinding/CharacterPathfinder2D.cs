@@ -137,7 +137,6 @@ namespace MoreMountains.TopDownEngine
         /// <returns></returns>
         protected virtual void DeterminePath(Vector3 startingPosition, Vector3 targetPosition)
         {
-            Debug.Log($"Determining {startingPosition} ==>> {targetPosition}");
             var seeker = GetComponent<Seeker>();
             seeker.StartPath(startingPosition, targetPosition, path =>
             {
