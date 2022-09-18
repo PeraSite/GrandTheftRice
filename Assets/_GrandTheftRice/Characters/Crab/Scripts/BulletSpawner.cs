@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,6 +10,8 @@ namespace GrandTheftRice {
 		[SerializeField] private float _shootDelay = 1f;
 
 		private Camera _cam;
+		private bool _isPressingShoot;
+		private float _shootingTimer;
 
 		private void Awake() {
 			_cam = Camera.main;
@@ -16,23 +19,31 @@ namespace GrandTheftRice {
 
 		public void OnFire(InputAction.CallbackContext ctx) {
 			if (ctx.started) {
-				//TODO: 연타 시 계속 발사하는 문제 수정해야함
-				StartCoroutine(nameof(Shoot));
+				_isPressingShoot = true;
+				_shootingTimer = 0f;
+				Shoot();
 			}
 
 			if (ctx.canceled) {
-				StopCoroutine(nameof(Shoot));
+				_isPressingShoot = false;
+			}
+		}
+
+		private void Update() {
+			if (_isPressingShoot) {
+				_shootingTimer += Time.deltaTime;
+				if (_shootingTimer >= _shootDelay) {
+					_shootingTimer = 0f;
+					Shoot();
+				}
 			}
 		}
 
 		//coroutine that spawn bullet every _shootDelay seconds
-		private IEnumerator Shoot() {
-			while (true) {
-				SpawnBullet(0);
-				SpawnBullet(30);
-				SpawnBullet(-30);
-				yield return new WaitForSeconds(_shootDelay);
-			}
+		private void Shoot() {
+			SpawnBullet(0);
+			SpawnBullet(30);
+			SpawnBullet(-30);
 		}
 
 		private void SpawnBullet(float angle) {
