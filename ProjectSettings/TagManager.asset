@@ -4,8 +4,11 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - NPC
-  - Obstacle
+  - LevelBounds
+  - FX
+  - Enemy
+  - World
+  - NoMask
   layers:
   - Default
   - TransparentFX
@@ -13,23 +16,23 @@ TagManager:
   - 
   - Water
   - UI
-  - Floor
-  - Obstacle
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Obstacles
+  - Ground
+  - Player
+  - ObstaclesDoors
+  - NoPathfinding
+  - Enemies
+  - NoCollisions
+  - Hole
+  - MovingPlatform
+  - FallingPlatform
+  - Projectile
+  - Camera1
+  - Camera2
+  - Camera3
+  - Camera4
   - 
   - 
   - 
@@ -44,14 +47,17 @@ TagManager:
     uniqueID: 0
     locked: 0
   - name: Background
-    uniqueID: 548162949
+    uniqueID: 1798043625
+    locked: 0
+  - name: Ground
+    uniqueID: 2296623839
     locked: 0
   - name: Foreground
-    uniqueID: 223935015
+    uniqueID: 1603220759
     locked: 0
-  - name: Character
-    uniqueID: 2456151967
+  - name: Characters
+    uniqueID: 47421343
     locked: 0
-  - name: UI
-    uniqueID: 4018113369
+  - name: Above
+    uniqueID: 961700441
     locked: 0
