@@ -63,6 +63,7 @@ namespace MoreMountains.TopDownEngine
         protected Vector3 _closestNavmeshPosition;
         protected NavMeshHit _navMeshHit;
         protected bool _pathFound;
+        protected Seeker _seeker;
 
         protected override void Initialization()
         {
@@ -70,6 +71,7 @@ namespace MoreMountains.TopDownEngine
             // AgentPath = new NavMeshPath();
             _lastValidTargetPosition = this.transform.position;
             Array.Resize(ref Waypoints, 5);
+            _seeker = GetComponent<Seeker>();
         }
 
         /// <summary>
@@ -135,10 +137,9 @@ namespace MoreMountains.TopDownEngine
         /// <param name="startingPos"></param>
         /// <param name="targetPos"></param>
         /// <returns></returns>
-        protected virtual void DeterminePath(Vector3 startingPosition, Vector3 targetPosition)
-        {
-            var seeker = GetComponent<Seeker>();
-            seeker.StartPath(startingPosition, targetPosition, path =>
+        protected virtual void DeterminePath(Vector3 startingPosition, Vector3 targetPosition) {
+            if (!_seeker.IsDone()) return;
+            _seeker.StartPath(startingPosition, targetPosition, path =>
             {
                 // NextWaypointIndex = 0;
 
