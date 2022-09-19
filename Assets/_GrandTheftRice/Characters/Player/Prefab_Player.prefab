@@ -147,7 +147,7 @@ MonoBehaviour:
   CharacterType: 0
   PlayerID: Player1
   CharacterAnimator: {fileID: 0}
-  UseDefaultMecanim: 0
+  UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
   DisableAnimatorLogs: 1
   CharacterModel: {fileID: 4145237413050084946}
@@ -515,8 +515,8 @@ MonoBehaviour:
   Model: {fileID: 0}
   CurrentHealth: 100
   Invulnerable: 0
-  InitialHealth: 10
-  MaximumHealth: 100
+  InitialHealth: 7
+  MaximumHealth: 7
   ResetHealthOnEnable: 1
   ImmuneToDamage: 0
   DamageMMFeedbacks: {fileID: 0}
