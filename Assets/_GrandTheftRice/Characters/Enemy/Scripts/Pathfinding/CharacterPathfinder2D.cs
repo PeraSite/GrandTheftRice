@@ -107,8 +107,8 @@ namespace MoreMountains.TopDownEngine
             }
 
             DrawDebugPath();
-            // DetermineNextWaypoint();
-            // DetermineDistanceToNextWaypoint();
+            DetermineNextWaypoint();
+            DetermineDistanceToNextWaypoint();
             MoveController();
         }
 
@@ -138,57 +138,16 @@ namespace MoreMountains.TopDownEngine
         /// <param name="targetPos"></param>
         /// <returns></returns>
         protected virtual void DeterminePath(Vector3 startingPosition, Vector3 targetPosition) {
-            if (!_seeker.IsDone()) return;
+            // if (!_seeker.IsDone()) _seeker.GetCurrentPath().WaitForPath();
             _seeker.StartPath(startingPosition, targetPosition, path =>
             {
-                // NextWaypointIndex = 0;
-
-                _closestNavmeshPosition = targetPosition;
-
-                // if (NavMesh.SamplePosition(targetPosition, out _navMeshHit, ClosestPointThreshold, NavMesh.AllAreas))
-                // {
-                //     _closestNavmeshPosition = _navMeshHit.position;
-                // }
-                //
-                // _pathFound = NavMesh.CalculatePath(startingPosition, _closestNavmeshPosition, NavMesh.AllAreas, AgentPath);
-                // _pathFound = true;
-                // if (_pathFound)
-                // {
-                //     _lastValidTargetPosition = _closestNavmeshPosition;
-                // }
-                // else
-                // {
-                //     NavMesh.CalculatePath(startingPosition, _lastValidTargetPosition, NavMesh.AllAreas, AgentPath);
-                // }
-
                 Waypoints = path.vectorPath.ToArray();
                 _waypoints = path.vectorPath.Count;
-                // Waypoints = AgentPath.corners;
-                // _waypoints = AgentPath.GetCornersNonAlloc(Waypoints);
-                // if (_waypoints >= Waypoints.Length)
-                // {
-                //     Array.Resize(ref Waypoints, _waypoints +5);
-                //     _waypoints = AgentPath.GetCornersNonAlloc(Waypoints);
-                // }
-                // if (_waypoints >= 2)
-                // {
-                //     NextWaypointIndex = 1;
-                // }
 
-
-
-                // Waypoints = path.vectorPath.ToArray();
                 NextWaypointIndex = 0;
-                while (NextWaypointIndex < Waypoints.Length)
+                if (_waypoints >= 2)
                 {
-                    if ((Waypoints[NextWaypointIndex] - transform.position).magnitude < DistanceToWaypointThreshold)
-                    {
-                        NextWaypointIndex++;
-                    }
-                    else
-                    {
-                        break;
-                    }
+                    NextWaypointIndex = 1;
                 }
                 OnPathProgress?.Invoke(NextWaypointIndex, Waypoints.Length,
                     Vector3.Distance(this.transform.position, Waypoints[NextWaypointIndex]));
