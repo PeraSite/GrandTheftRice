@@ -61,7 +61,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 5
+  LifeTime: 1
 --- !u!114 &114526255981919672
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,7 +81,7 @@ MonoBehaviour:
   ExecuteOnDisable:
     m_PersistentCalls:
       m_Calls: []
-  LifeTime: 2
+  LifeTime: 1
   FaceDirection: 1
   FaceMovement: 0
   MovementVector: 0
@@ -155,8 +155,8 @@ MonoBehaviour:
     m_Bits: 8960
   Owner: {fileID: 0}
   TriggerFilter: 195
-  MinDamageCaused: 10
-  MaxDamageCaused: 10
+  MinDamageCaused: 1
+  MaxDamageCaused: 1
   TypedDamages: []
   DamageCausedKnockbackType: 1
   DamageCausedKnockbackDirection: 3
@@ -15172,8 +15172,8 @@ MonoBehaviour:
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.5
+  MaxVolume: 0.7
   MinPitch: 1
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}
@@ -15383,8 +15383,8 @@ MonoBehaviour:
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
-  MaxVolume: 1
+  MinVolume: 0.5
+  MaxVolume: 0.7
   MinPitch: 1
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}
