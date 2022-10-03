@@ -62,7 +62,7 @@ namespace GrandTheftRice.Characters.Player.Hook {
 
 		private Tween EndLineTween() {
 			return DOTween.Sequence(_lineRenderer)
-				.Append(TweenLine(0f, 0.5f))
+				.Append(TweenLine(0f, 0.3f))
 				.AppendCallback(() => {
 					_handleWeapon.PermitAbility(true);
 					_lineRenderer.enabled = false;
@@ -73,7 +73,9 @@ namespace GrandTheftRice.Characters.Player.Hook {
 
 		private void SetLineCompletion(float percent) {
 			_lineCompletePercent = percent;
-			_lineRenderer.SetPosition(1, transform.position + (_targetPosition - transform.position) * percent);
+			var endPosition = transform.position + (_targetPosition - transform.position) * percent;
+			endPosition.z = -1f; //Fixing same Z position issue
+			_lineRenderer.SetPosition(1, endPosition);
 		}
 
 		private void CheckHookCollide() {
@@ -88,13 +90,17 @@ namespace GrandTheftRice.Characters.Player.Hook {
 			_lineRenderer.DOKill();
 
 			if (col.CompareTag("Enemy")) {
+				var end = EndLineTween();
+
 				if (!col.TryGetComponent<Character>(out var character)) return;
 				var stun = character.FindAbility<CharacterStun>();
 				if (stun.SafeIsUnityNull()) return;
 				stun.StunFor(_stunTime);
-				EndLineTween();
+				end.SetDelay(0.3f);
 			} else if (col.CompareTag("World")) {
 				StartCoroutine(MoveTowardWall(hit.point));
+			} else {
+				EndLineTween();
 			}
 		}
 
