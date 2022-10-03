@@ -1,0 +1,183 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: idle_animation
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 21300000, guid: aa9fe3a33b0ee1d46a4fa16d2a11439a, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 6d86235ad80b7984cad386fb7a26551f, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 820f4b34feb50f44591e97f7421a5387, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 260daabeed1c2004280c3b5478f959c8, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 30f0bae0624d70b48804efc663abad70, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 28cef2268d649f64bb068e99b54c7457, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 4f67fbdcd88669e459396879679c6531, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 4f45a2917fffb1640ba61f88bedbcfb8, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: efca4d06abb512d48bccd118b67ae758, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: b1a8f836861bd0e45b98d17c188959a6, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: a763af5a93beeff47b1ed5e2e74aa921, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 66a1bf530c21fcb4ead5ce6f51643bf9, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: ae7da813b170ae2449da69156ae7c082, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 000f582c1ef45ed4cbe659af2ca9a065, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 421cf927ccb6cad479fb9e3c95952250, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 5359835377ea08f498d3e43b2efe151d, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 16f94cbe37a063043ba587b8f137e9ab, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 9f28040843717f645bdb82c8653ff0c0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 855b8b914c62c2644ac451f0f253832c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 5bac8c1de6d5b424b8ec47b9ac3cd402, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 5d5aa7a82c49f5e429b3bb40247f775a, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 4f54f4fa722aa0f468b70a82e9ecb9c8, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: a041ba9d139d1274fac2a8775b48f75e, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 1fd8aba275dc6c9498acecfba497915f, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: e9748eedc702e8c4eb133e93bdd721e1, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 7dd686f751da11842aa6ea4bc6418258, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: cecf8fea274d48749aa835aedb00dcab, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: f86235928bb0a9e43a0259513f3332eb, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: e0534afaf0f03dd46a75b706513bbf88, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: b870410d8eb077e40bc737ef12bb0cc0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 83a020fee056f4746b6cc5af26ec25be, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: af39225fdece71a41b2dc44233af2fbe, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 603606fbf69224e40bcdfe3ebbbc498b, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: d7d57b8916909244088b87fe5b621643, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 28e93c931dab3604888a3a29679fb41f, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 345df4334c7b4154fa702684c9a0b769, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: d828cd8512600e94aaccbc471d0663fa, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 2f542c0b85c414e4299523e5f229e80c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 7f9e56c17b5080e458b60169cddee172, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: b444bc1e9fd398846ba7a060e5b0b8b2, type: 3}
+    drivers:
+      keys: []
+      values: 
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: f4614871-910e-4dae-aa41-0479e6271ea9
+  drivers:
+    keys: []
+    values: 

@@ -1,0 +1,112 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: hit_animation
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 21300000, guid: 21ae35a29fd8366428d30bc60b8be9f1, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 8e99619c86067994584d587dd4f09127, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 2255df6b16ab2ed44ac80d5907b77adc, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 9c1f8333f11cdc24d8c30393960827e0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 3791943df6b11cc4cb3f66c9f9b6bc7c, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: cd98497637bf6b54a932c846b9cee725, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: e8af98c40cf2e584daca3caf4ee20ec7, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 82dcd2af48ebd014a89867eddd468e0d, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 1b208d5af67f28b44acd3172bdbea788, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 6cc418ec7ae53f445989dcff6093eb0a, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 28e2aa60537a6434abe99c4a66f3bcf7, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 9c7f7679d0c22c74da619a1f3a18a6f0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 25c5da79ef3d1ac489ad01034618ea71, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: d77467fc121d66b4e9486b6968cca546, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: a181f7b091ee58741998ba5095a491f4, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: ebe17577b888a134b91d97226adc2ca2, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 94360c221e407d343a2ed256c61ece30, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: c4a92916c794cdc43b25451acd8e03fd, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 0f7c888385f45624188d9a1d4ca438ce, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 91cda068ab72b5148abaaaf03ce35575, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: cff8ee6b6202b5440a6a4a4ad523b045, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 4f8cbe12b72d9264ca1de8d6afdc9afe, type: 3}
+    drivers:
+      keys:
+      - state
+      values: 00000000
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: 8df3750a-862b-43ef-81f3-351c82978646
+  drivers:
+    keys: []
+    values: 
