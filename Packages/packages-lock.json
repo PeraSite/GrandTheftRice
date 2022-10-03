@@ -1,5 +1,12 @@
 {
   "dependencies": {
+    "com.aarthificial.reanimation": {
+      "version": "https://github.com/PeraSite/reanimation.git",
+      "depth": 0,
+      "source": "git",
+      "dependencies": {},
+      "hash": "8f9135c19e0d39317a9ed8938893a382008403b7"
+    },
     "com.coffee.softmask-for-ugui": {
       "version": "https://github.com/mob-sakai/SoftMaskForUGUI.git",
       "depth": 0,
