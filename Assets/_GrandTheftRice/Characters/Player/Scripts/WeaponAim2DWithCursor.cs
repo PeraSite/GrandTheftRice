@@ -9,11 +9,6 @@ namespace Characters.Player.Scripts {
 			_cam = Camera.main;
 		}
 
-		protected override void OnEnable() {
-			base.OnEnable();
-			// Cursor.visible = false;
-		}
-
 		protected override void HideMousePointer() {
 			if (AimControl != AimControls.Mouse) {
 				return;
