@@ -47,7 +47,6 @@ namespace GrandTheftRice.System {
 		public void GoMain() {
 			GameManager.Instance.UnPause(PauseMethods.NoPauseMenu);
 			GameModeManager.Instance.HandleStartRequested(GameModeManager.Instance.mainMenuMode);
-			GameManager.Instance.Reset();
 		}
 	}
 }

@@ -14,7 +14,7 @@ GameObject:
   m_Layer: 0
   m_Name: "\uC8FC\uBA39\uBC25"
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 3936346786652291628, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -74,15 +74,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PickedMMFeedbacks: {fileID: 7221612180175333010}
-  DisableColliderOnPick: 0
-  DisableObjectOnPick: 1
+  DisableColliderOnPick: 1
+  DisableObjectOnPick: 0
   DisableDelay: 0
-  DisableModelOnPick: 0
+  DisableModelOnPick: 1
   DisableTargetObjectOnPick: 0
   TargetObjectToDisable: {fileID: 0}
   TargetObjectDisableDelay: 1
-  Model: {fileID: 0}
+  Model: {fileID: 4641192292155670131}
   PointsToAdd: 50
+  _regenTime: 20
 --- !u!1 &2330873339160160824
 GameObject:
   m_ObjectHideFlags: 0

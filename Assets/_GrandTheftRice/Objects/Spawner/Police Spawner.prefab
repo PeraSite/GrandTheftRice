@@ -46,8 +46,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CanSpawn: 1
-  MinFrequency: 5
-  MaxFrequency: 5
+  MinFrequency: 8
+  MaxFrequency: 20
   CanSpawnButton: 0
   _xOffset: {x: -1.5, y: 1.5}
   _yOffset: {x: -1.5, y: 1.5}
