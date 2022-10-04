@@ -260,16 +260,13 @@ GameObject:
   - component: {fileID: 1338487849833582639}
   - component: {fileID: 8229789861693166384}
   - component: {fileID: 3049521315574038199}
-  - component: {fileID: 9152171443239602988}
-  - component: {fileID: 5743883025378599018}
   - component: {fileID: 4082883137664376966}
-  - component: {fileID: 1898412797065273968}
   - component: {fileID: 323821364406406921}
   - component: {fileID: 2508169526955380388}
   - component: {fileID: 872445034}
   - component: {fileID: 413801883614426006}
   - component: {fileID: 1048927099110933611}
-  - component: {fileID: 2191611367201786973}
+  - component: {fileID: 3493045112113721509}
   m_Layer: 13
   m_Name: "\uC2DC\uBBFC"
   m_TagString: Enemy
@@ -451,90 +448,6 @@ MonoBehaviour:
   AbsoluteThresholdWeapon: 0.5
   CurrentFacingDirection: 1
   IsFacingRight: 1
---- !u!114 &9152171443239602988
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7783640707220733494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cde870ae7090b974bb115e88bfbf8320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  DashMode: 1
-  DashSpace: 0
-  DashDirection: {x: 0, y: 0, z: 1}
-  DashDistance: 6
-  DashDuration: 0.2
-  DashCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    - serializedVersion: 3
-      time: 1
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0
-      outWeight: 0
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  Cooldown:
-    Unlimited: 0
-    ConsumptionDuration: 2
-    PauseOnEmptyDuration: 1
-    RefillDuration: 1
-    CanInterruptRefill: 1
-    CooldownState: 0
-    CurrentDurationLeft: 0
-  InvincibleWhileDashing: 0
-  DashFeedback: {fileID: 0}
---- !u!114 &5743883025378599018
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7783640707220733494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c86c96e06d6ae44b822a6ab24e1b8fe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  JumpDuration: 1
-  JumpProportionalToPress: 1
-  MinimumPressTime: 0.4
-  JumpStartFeedback: {fileID: 0}
-  JumpStopFeedback: {fileID: 0}
 --- !u!114 &4082883137664376966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -568,29 +481,6 @@ MonoBehaviour:
   WalkParticles: []
   TouchTheGroundParticles: []
   TouchTheGroundSfx: []
---- !u!114 &1898412797065273968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7783640707220733494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d103439fc2940e347937487a70ea01e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AbilityStartSfx: {fileID: 0}
-  AbilityInProgressSfx: {fileID: 0}
-  AbilityStopSfx: {fileID: 0}
-  AbilityStartFeedbacks: {fileID: 0}
-  AbilityStopFeedbacks: {fileID: 0}
-  AbilityPermitted: 1
-  BlockingMovementStates: 
-  BlockingConditionStates: 
-  RunSpeed: 16
-  AutoRun: 0
-  AutoRunThreshold: 0.6
 --- !u!114 &323821364406406921
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -618,7 +508,7 @@ MonoBehaviour:
   KnockbackForceMultiplier: 1
   DestroyOnDeath: 1
   DelayBeforeDestruction: 0
-  PointsWhenDestroyed: 0
+  PointsWhenDestroyed: 25
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
   DisableModelOnDeath: 1
@@ -901,7 +791,7 @@ MonoBehaviour:
   renderer: {fileID: 5893815497856677425}
   fps: 30
   temporaryDrivers: []
---- !u!114 &2191611367201786973
+--- !u!114 &3493045112113721509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -910,20 +800,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 7783640707220733494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bbbe51f9806750489b5fe08d7a19729, type: 3}
+  m_Script: {fileID: 11500000, guid: 72de0b0360096ea41a18d17864ecb963, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RespawnOnPlayerRespawn: 1
-  RepositionToInitOnPlayerRespawn: 1
-  DisableAllComponentsOnKill: 0
-  DisableGameObjectOnKill: 1
-  IgnoreCheckpointsAlwaysRespawn: 1
-  AssociatedCheckpoints: []
-  AutoRespawnDuration: 0
-  AutoRespawnAmount: 3
-  AutoRespawnRemainingAmount: 3
-  RespawnEffect: {fileID: 0}
-  RespawnSfx: {fileID: 0}
+  BoundsBasedOn: 1
+  ExecuteOnEnable:
+    m_PersistentCalls:
+      m_Calls: []
+  ExecuteOnDisable:
+    m_PersistentCalls:
+      m_Calls: []
+  LifeTime: 0
 --- !u!1 &9171982283175916903
 GameObject:
   m_ObjectHideFlags: 0
