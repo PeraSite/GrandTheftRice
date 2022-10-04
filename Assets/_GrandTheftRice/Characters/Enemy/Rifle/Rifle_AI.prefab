@@ -5089,7 +5089,7 @@ MonoBehaviour:
   TriggerMode: 1
   DelayBeforeUse: 0
   DelayBeforeUseReleaseInterruption: 1
-  TimeBetweenUses: 1
+  TimeBetweenUses: 2
   TimeBetweenUsesReleaseInterruption: 1
   UseBurstMode: 0
   BurstLength: 3
@@ -5140,7 +5140,7 @@ MonoBehaviour:
   InitializeOnStart: 1
   Interruptable: 0
   Flipped: 0
-  ProjectileSpawnOffset: {x: 1.85, y: 0.07, z: 0}
+  ProjectileSpawnOffset: {x: 0, y: 0, z: 0}
   DefaultProjectileDirection: {x: 0, y: 0, z: 1}
   ProjectilesPerShot: 1
   SpawnTransforms: []
@@ -5184,7 +5184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AimControl: 4
   RotationMode: 0
-  WeaponRotationSpeed: 0
+  WeaponRotationSpeed: 0.3
   MinimumAngle: -180
   MaximumAngle: 180
   MinimumMagnitude: 0.2
@@ -5233,7 +5233,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4616784861444994
 Transform:
   m_ObjectHideFlags: 0

@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: eeb68d44a260e964584c4310ad5add3a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6ee31e1c5487a0c4ba91b5c2e34ca579, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -268,6 +268,7 @@ GameObject:
   - component: {fileID: 2508169526955380388}
   - component: {fileID: 872445034}
   - component: {fileID: 413801883614426006}
+  - component: {fileID: 1048927099110933611}
   m_Layer: 13
   m_Name: "\uC2DC\uBBFC"
   m_TagString: Enemy
@@ -302,7 +303,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7783640707220733494}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe81ad80cb743b408fa90b048ad597f, type: 3}
+  m_Script: {fileID: 11500000, guid: 14ef749473444bfb9f755a58bbce0e93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   CharacterDimension: 0
@@ -319,6 +320,7 @@ MonoBehaviour:
   - {fileID: 9171982283175916903}
   CharacterBrain: {fileID: 3426484197710950137}
   OptimizeForMobile: 1
+  _reanimator: {fileID: 1048927099110933611}
 --- !u!50 &5314986305281489134
 Rigidbody2D:
   serializedVersion: 4
@@ -364,7 +366,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.096208096, y: -0.11370015}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -375,7 +377,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.1924162, y: 1.5422623}
   m_EdgeRadius: 0
 --- !u!114 &8229789861693166384
 MonoBehaviour:
@@ -437,13 +439,13 @@ MonoBehaviour:
   FacingMode: 1
   FacingBase: 0
   ModelShouldFlip: 1
-  ModelFlipValueLeft: {x: -1, y: 1, z: 1}
-  ModelFlipValueRight: {x: 1, y: 1, z: 1}
+  ModelFlipValueLeft: {x: 1, y: 1, z: 1}
+  ModelFlipValueRight: {x: -1, y: 1, z: 1}
   ModelShouldRotate: 0
   ModelRotationValueLeft: {x: 0, y: 180, z: 0}
   ModelRotationValueRight: {x: 0, y: 0, z: 0}
   ModelRotationSpeed: 0
-  InitialFacingDirection: 1
+  InitialFacingDirection: 0
   AbsoluteThresholdMovement: 0.5
   AbsoluteThresholdWeapon: 0.5
   CurrentFacingDirection: 1
@@ -882,6 +884,22 @@ MonoBehaviour:
   WeaponModels: []
   StunButton: 0
   ExitStunButton: 0
+--- !u!114 &1048927099110933611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783640707220733494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a864b8e4f6a4034f9fa2ad4aa900006, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  root: {fileID: 11400000, guid: bbeefcb7f553011498604a07db6a4fe6, type: 2}
+  renderer: {fileID: 5893815497856677425}
+  fps: 30
+  temporaryDrivers: []
 --- !u!1 &9171982283175916903
 GameObject:
   m_ObjectHideFlags: 0

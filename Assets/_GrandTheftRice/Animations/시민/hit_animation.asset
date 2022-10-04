@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f1da0b6abdb7d45aa4315eccab639b, type: 3}
+  m_Name: hit_animation
+  m_EditorClassIdentifier: 
+  cels:
+  - sprite: {fileID: 21300000, guid: e0aa82e7b33f5c44fa130c68b4532f8e, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 9b715f58cbc4f5a429b820bcdcbfbcfe, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: cf7a974f454f61343a6510eea72edc19, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: a7cadd68656b665479bde7e0738268c7, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 1132aa7027e30c24a896387be71c3e31, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: c063bf24df9b36e4792728547c38ed73, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: d0d8b45553727b44c9e51c117c34dcd0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: baa55752a357c6e40bc04fa70c2d42ef, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: ad09cf93b579491459552f33808e8a24, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 3edd2397d6d699543aa75042b7c78acd, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: e42fa252d57176c49b96f745712581f7, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 6fc7188e92dcc4f43a263d4fcd245845, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 73fe470ed8087b1428d9844a05efafe0, type: 3}
+    drivers:
+      keys: []
+      values: 
+  - sprite: {fileID: 21300000, guid: 23518a7f396a82e438c37732ce7b9b7d, type: 3}
+    drivers:
+      keys:
+      - state
+      values: 00000000
+  controlDriver:
+    name: 
+    autoIncrement: 1
+    percentageBased: 0
+    guid: c270c34c-9651-43f4-abdc-1a3fa9037e16
+  drivers:
+    keys: []
+    values: 

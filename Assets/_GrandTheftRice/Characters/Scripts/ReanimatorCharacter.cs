@@ -21,7 +21,7 @@ namespace GrandTheftRice.Characters.Scripts {
 
 		protected override void UpdateAnimators() {
 			base.UpdateAnimators();
-			_reanimator.Set("isMoving", LinkedInputManager.PrimaryMovement.magnitude > 0);
+			_reanimator.Set("isMoving", _controller.CurrentMovement.magnitude > 0);
 		}
 
 		private static class Drivers {
