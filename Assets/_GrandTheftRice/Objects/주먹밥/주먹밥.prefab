@@ -70,7 +70,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 173960}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c704680c90181c648a0b5cb809aa40ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 981eea16d59b4a1f865cdad2e57e7eb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   PickedMMFeedbacks: {fileID: 7221612180175333010}
@@ -82,7 +82,7 @@ MonoBehaviour:
   TargetObjectToDisable: {fileID: 0}
   TargetObjectDisableDelay: 1
   Model: {fileID: 0}
-  PointsToAdd: 10
+  PointsToAdd: 50
 --- !u!1 &2330873339160160824
 GameObject:
   m_ObjectHideFlags: 0

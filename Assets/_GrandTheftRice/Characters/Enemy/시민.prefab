@@ -177,8 +177,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a946a428cb16e1409d657b9041c69be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Label: "\uCD5C\uCD08 \uC5B4\uADF8\uB85C"
-  Radius: 5
+  Label: "\uCD5C\uCD08 \uC5B4\uADF8\uB85C - \uD50C\uB808\uC774\uC5B4"
+  Radius: 10
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Label: "\uC5B4\uADF8\uB85C \uD480\uAE30 \uCCB4\uD06C"
-  Radius: 10
+  Radius: 15
   DetectionOriginOffset: {x: 0, y: 0, z: 0}
   TargetLayer:
     serializedVersion: 2
