@@ -9,9 +9,6 @@ EditorBuildSettings:
     path: Assets/_GrandTheftRice/Scenes/MainMenu.unity
     guid: 8072fdeffe826664eb5a7ca758e110e4
   - enabled: 1
-    path: Assets/_GrandTheftRice/Scenes/NameSetting.unity
-    guid: 7dfffe41d26824a448f438a75e3700df
-  - enabled: 1
     path: Assets/_GrandTheftRice/Scenes/Play.unity
     guid: 87e3d1ff2aee4314ebaa2ff422101e83
   m_configObjects:

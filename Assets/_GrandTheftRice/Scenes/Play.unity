@@ -9336,6 +9336,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: m_ApplyRootMotion
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4567878607413402693, guid: 00da00aa5202b0248a17f3db23cafc84,
         type: 3}
       propertyPath: m_RootOrder
@@ -9436,6 +9444,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4567878607413402693, guid: c8d925d79ec8a1f4abf1d03c10e2842c,
         type: 3}
       propertyPath: m_RootOrder
