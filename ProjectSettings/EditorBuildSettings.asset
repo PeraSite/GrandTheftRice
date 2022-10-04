@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_GrandTheftRice/Scenes/Play.unity
     guid: 87e3d1ff2aee4314ebaa2ff422101e83
+  - enabled: 1
+    path: Assets/_GrandTheftRice/Scenes/LoadingScreen.unity
+    guid: 13d8b07637c78e847973e6af6e6642cd
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 71c13014a1cf37940a06a6f89beeee53,
       type: 2}
