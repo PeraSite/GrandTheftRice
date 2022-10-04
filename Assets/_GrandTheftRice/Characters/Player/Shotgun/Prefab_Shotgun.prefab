@@ -5213,7 +5213,7 @@ MonoBehaviour:
   GameObjectToPool: {fileID: 1133100380862132, guid: e282d6917ea45f6458ff4c0d58fec26e,
     type: 3}
   PoolSize: 20
-  PoolCanExpand: 1
+  PoolCanExpand: 0
 --- !u!114 &114277420042899472
 MonoBehaviour:
   m_ObjectHideFlags: 0
