@@ -1,8 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 using MoreMountains.Tools;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using MoreMountains.TopDownEngine;
+using Sirenix.Utilities;
 
 namespace MoreMountains.CorgiEngine
 {
@@ -22,8 +24,8 @@ namespace MoreMountains.CorgiEngine
         [Tooltip("the size of the heart to display")]
         public Vector2 HeartSize = new Vector2(50, 50);
 
-        [Tooltip("the character you want your health to be displayed from")]
-        public GameObject playerCharacter;
+        [Tooltip("the character id you want your health to be displayed from")]
+        public string PlayerID = "Player1";
 
         [Tooltip("show empty hearts or remove them?")]
         public bool showEmptyHearts;
@@ -32,7 +34,7 @@ namespace MoreMountains.CorgiEngine
         //[Tooltip("the number of hearts to provision (if you know you'll never have more than, say, 5 hearts in your game, set it to 5.")]
 
 
-        private Health characterhealth;
+        private Health _health;
         private int MaxHealth;
         private int CurrentHealth;
 
@@ -41,27 +43,19 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// On Start we initialize our hearts
         /// </summary>
-        protected virtual void Start()
+        protected virtual IEnumerator Start()
         {
-            Initialization();
-        }
-
-        /// <summary>
-        /// On Init we draw all our provision hearts
-        /// </summary>
-        protected virtual void Initialization()
-        {
+            yield return new WaitUntil(() => LevelManager.Instance.Players != null);
             DrawHearts();
         }
 
         /// <summary>
         /// Draws as many hearts as provisioned
         /// </summary>
-        protected virtual void DrawHearts()
-        {
+        protected virtual void DrawHearts() {
 
-            Health characterHealth = playerCharacter.GetComponent<Health>();
-            MaxHealth = (int) characterHealth.MaximumHealth;
+            _health = LevelManager.Instance.Players.Find(c => c.PlayerID.Equals(PlayerID)).GetComponent<Health>();
+            MaxHealth = (int) _health.MaximumHealth;
 
             // we init our list
             Hearts = new List<Image>();
@@ -81,6 +75,7 @@ namespace MoreMountains.CorgiEngine
 
                 Image heartImage = heart.AddComponent<Image>();
                 heartImage.sprite = HeartFull;
+                heartImage.preserveAspect = true;
 
                 heart.MMGetComponentNoAlloc<RectTransform>().localScale = Vector3.one;
                 heart.MMGetComponentNoAlloc<RectTransform>().sizeDelta = HeartSize;
@@ -92,12 +87,10 @@ namespace MoreMountains.CorgiEngine
         /// <summary>
         /// On Update we'll keep our hearts updated
         /// </summary>
-        protected virtual void Update()
-        {
-
-            Health characterHealth = playerCharacter.GetComponent<Health>();
-            MaxHealth = (int) characterHealth.MaximumHealth;
-            CurrentHealth = (int) characterHealth.CurrentHealth;
+        protected virtual void Update() {
+            if (_health.SafeIsUnityNull()) return;
+            MaxHealth = (int) _health.MaximumHealth;
+            CurrentHealth = (int) _health.CurrentHealth;
 
             UpdateHearts(MaxHealth, CurrentHealth);
         }

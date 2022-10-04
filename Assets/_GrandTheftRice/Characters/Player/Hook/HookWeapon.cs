@@ -32,6 +32,7 @@ namespace GrandTheftRice.Characters.Player.Hook {
 		protected override void Update() {
 			base.Update();
 			_lineRenderer.SetPosition(0, transform.position);
+			HookCooldownUI.Instance.CurrentCooldown = _delayBetweenUsesCounter;
 		}
 
 		private void OnDisable() {
