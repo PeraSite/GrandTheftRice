@@ -35,5 +35,17 @@ namespace GrandTheftRice.UI {
 			var zoomIn = new Vector3(screenPos.x, screenPos.y, _zoomInZ);
 			_cam.transform.DOJumpZ(zoomIn, _jumpPower, 1, _animationDuration);
 		}
+
+		public void StartGame() {
+			GameModeManager.Instance.HandleStartRequested(GameModeManager.Instance.playMode);
+		}
+
+		public void QuitGame() {
+#if UNITY_EDITOR
+			UnityEditor.EditorApplication.isPlaying = false;
+#else
+			Application.Quit();
+#endif
+		}
 	}
 }
