@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using PeraCore.Runtime;
 using PixelCrushers;
+using UnityEngine.SceneManagement;
 
 namespace GrandTheftRice {
 	public class MainMenuGameMode : GameModeBase {
@@ -8,7 +9,7 @@ namespace GrandTheftRice {
 		public string mainMenuScene;
 
 		public override IEnumerator OnStart() {
-			yield return SaveSystem.LoadAdditiveSceneAsync(mainMenuScene);
+			yield return SceneManager.LoadSceneAsync(mainMenuScene);
 		}
 
 		public override IEnumerator OnEditorStart() {

@@ -274,6 +274,7 @@ namespace MoreMountains.TopDownEngine
 			Checkpoints = FindObjectsOfType<CheckPoint>().OrderBy(o => o.CheckPointOrder).ToList();
 			_savedPoints =GameManager.Instance.Points;
 			_started = DateTime.UtcNow;
+			GameManager.Instance.Points = 0;
 		}
 
 		/// <summary>

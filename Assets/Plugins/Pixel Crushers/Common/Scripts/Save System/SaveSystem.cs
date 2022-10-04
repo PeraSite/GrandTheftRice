@@ -811,9 +811,8 @@ namespace PixelCrushers
         /// method loads the scene by build index number.
         /// </summary>
         /// <param name="sceneNameAndSpawnpoint">Scene name, followed by an optional spawnpoint separated by '@'.</param>
-        public static void LoadScene(string sceneNameAndSpawnpoint)
-        {
-            if (string.IsNullOrEmpty(sceneNameAndSpawnpoint)) return;
+        public static IEnumerator LoadScene(string sceneNameAndSpawnpoint) {
+            if (string.IsNullOrEmpty(sceneNameAndSpawnpoint)) yield break;
             string sceneName = sceneNameAndSpawnpoint;
             string spawnpointName = string.Empty;
             if (sceneNameAndSpawnpoint.Contains("@"))
@@ -824,7 +823,7 @@ namespace PixelCrushers
             }
             var savedGameData = RecordSavedGameData();
             savedGameData.sceneName = sceneName;
-            instance.StartCoroutine(LoadSceneCoroutine(savedGameData, spawnpointName));
+            yield return instance.StartCoroutine(LoadSceneCoroutine(savedGameData, spawnpointName));
         }
 
         public static IEnumerator LoadSceneCoroutine(SavedGameData savedGameData, string spawnpointName)
