@@ -97,6 +97,7 @@ namespace GrandTheftRice.Characters.Player.Hook {
 				var stun = character.FindAbility<CharacterStun>();
 				if (stun.SafeIsUnityNull()) return;
 				stun.StunFor(_stunTime);
+				character.CharacterHealth.Damage(2f, Owner.gameObject, 0.2f,0.2f, (character.transform.position - Owner.transform.position).normalized);
 				end.SetDelay(0.3f);
 			} else if (col.CompareTag("World")) {
 				StartCoroutine(MoveTowardWall(hit.point));
