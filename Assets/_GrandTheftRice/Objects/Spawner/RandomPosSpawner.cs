@@ -14,6 +14,7 @@ namespace GrandTheftRice.Objects.Spawner {
 		[SerializeField] private Vector2 _yOffset;
 
 		protected override void Spawn() {
+			//TODO: Check max spawn count from IntVariable that determined by star count
 			GameObject nextGameObject = ObjectPooler.GetPooledGameObject();
 
 			// mandatory checks
