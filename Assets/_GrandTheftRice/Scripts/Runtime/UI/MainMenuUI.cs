@@ -1,17 +1,21 @@
-﻿using DG.Tweening;
+﻿using DG.Tweening.Core;
 using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace GrandTheftRice.UI {
 	public class MainMenuUI : MonoBehaviour {
 		[Title("카메라 위치")]
-		[SerializeField] private Vector3 _defaultCameraPosition;
-		[SerializeField] private Vector3 _settingCameraPosition;
-		[SerializeField] private Vector3 _rankingCameraPosition;
+		[SerializeField] private Transform _mainPanel;
+		[SerializeField] private Transform _settingPanel;
+		[SerializeField] private Transform _rankingPanel;
+
+		[SerializeField] private float _zoomInZ;
+		[SerializeField] private float _jumpPower;
+
 
 		[Title("애니메이션 설정")]
 		[SerializeField] private float _animationDuration = 0.5f;
-		
+
 		private Camera _cam;
 
 		private void Awake() {
@@ -19,16 +23,17 @@ namespace GrandTheftRice.UI {
 		}
 
 		[Button]
-		public void ShowSetting() => MoveCameraTo(_settingCameraPosition);
+		public void ShowMainScreen() => MoveCameraTo(_mainPanel.position);
 
 		[Button]
-		public void ShowRanking() => MoveCameraTo(_rankingCameraPosition);
+		public void ShowSetting() => MoveCameraTo(_settingPanel.position);
 
 		[Button]
-		public void ShowMainScreen() => MoveCameraTo(_defaultCameraPosition);
+		public void ShowRanking() => MoveCameraTo(_rankingPanel.position);
 
-		private void MoveCameraTo(Vector3 position) {
-			_cam.transform.DOMove(position, _animationDuration);
+		private void MoveCameraTo(Vector2 screenPos) {
+			var zoomIn = new Vector3(screenPos.x, screenPos.y, _zoomInZ);
+			_cam.transform.DOJumpZ(zoomIn, _jumpPower, 1, _animationDuration);
 		}
 	}
 }
