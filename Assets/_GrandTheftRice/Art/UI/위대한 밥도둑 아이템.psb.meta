@@ -33,7 +33,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 1000
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -90,8 +90,7 @@ ScriptedImporter:
     tessellationDetail: 0
     parentGroupIndex: -1
     uvTransform: {x: 0, y: 0}
-  mosaicSpriteImportData: []
-  rigSpriteImportData:
+  mosaicSpriteImportData:
   - name: "\uAC04\uC7A5"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -103,7 +102,7 @@ ScriptedImporter:
       y: 4
       width: 1447
       height: 1459
-    spriteID: 2fd1fe5f35d4ad846ab72fc881c21184
+    spriteID: 124dc24b6ac91f54ab0247077dce498d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -124,7 +123,50 @@ ScriptedImporter:
       y: 1471
       width: 1447
       height: 1459
-    spriteID: e41fdddc46b3ddf439dbe4479a3efdc8
+    spriteID: aca5e3059a0360944a3ebd10d61ca9a7
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -226, y: 1275}
+  rigSpriteImportData:
+  - name: "\uAC04\uC7A5"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 1447
+      height: 1459
+    spriteID: b4402e229c244b64b9e783d8c48ef7fb
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    parentGroupIndex: -1
+    uvTransform: {x: -226, y: -192}
+  - name: "\uACE0\uCD94\uC7A5"
+    originalName: 
+    pivot: {x: 0.5, y: 0.5}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 1471
+      width: 1447
+      height: 1459
+    spriteID: c98e20b436689bd48961d2cfe08e67fa
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -147,9 +189,42 @@ ScriptedImporter:
     dimension: {x: 0, y: 0}
     characterGroups: []
     boneReadOnly: 0
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   mosaicLayers: 1
-  characterMode: 1
+  characterMode: 0
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
@@ -162,13 +237,12 @@ ScriptedImporter:
     categories: []
   spritePackingTag: 
   resliceFromLayer: 0
-  mosaicPSDLayers: []
-  rigPSDLayers:
+  mosaicPSDLayers:
   - name: "\uAC04\uC7A5"
     spriteName: "\uAC04\uC7A5"
     isGroup: 0
     parentIndex: -1
-    spriteID: 2fd1fe5f35d4ad846ab72fc881c21184
+    spriteID: 124dc24b6ac91f54ab0247077dce498d
     layerID: 0
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -178,7 +252,28 @@ ScriptedImporter:
     spriteName: "\uACE0\uCD94\uC7A5"
     isGroup: 0
     parentIndex: -1
-    spriteID: e41fdddc46b3ddf439dbe4479a3efdc8
+    spriteID: aca5e3059a0360944a3ebd10d61ca9a7
+    layerID: 1985580181
+    mosaicPosition: {x: 4, y: 1471}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  rigPSDLayers:
+  - name: "\uAC04\uC7A5"
+    spriteName: "\uAC04\uC7A5"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: b4402e229c244b64b9e783d8c48ef7fb
+    layerID: 0
+    mosaicPosition: {x: 4, y: 4}
+    flatten: 0
+    isImported: 1
+    isVisible: 1
+  - name: "\uACE0\uCD94\uC7A5"
+    spriteName: "\uACE0\uCD94\uC7A5"
+    isGroup: 0
+    parentIndex: -1
+    spriteID: c98e20b436689bd48961d2cfe08e67fa
     layerID: 1985580181
     mosaicPosition: {x: 4, y: 1471}
     flatten: 0
