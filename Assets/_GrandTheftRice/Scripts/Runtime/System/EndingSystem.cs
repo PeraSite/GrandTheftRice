@@ -7,9 +7,12 @@ using UnityEngine;
 
 namespace GrandTheftRice.System {
 	public class EndingSystem : MMSingleton<EndingSystem> {
+
+		public const int DEFAULT_GAME_TIME = 300;
+
 		[Title("설정")]
 		[Tooltip("게임 전체 플레이 타임(초)")]
-		[field: SerializeField] public int GameTime { get; private set; } = 600;
+		[SerializeField] public int GameTime = DEFAULT_GAME_TIME;
 
 		[Title("런타임 값")]
 		[Tooltip("남은 플레이 타임(초)")]

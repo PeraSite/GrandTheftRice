@@ -621,6 +621,7 @@ GameObject:
   - component: {fileID: 4181923400760382042}
   - component: {fileID: -3214759584652192345}
   - component: {fileID: 2876649135049041930}
+  - component: {fileID: 2001364012766429699}
   m_Layer: 10
   m_Name: "\uD50C\uB808\uC774\uC5B4"
   m_TagString: Player
@@ -1119,3 +1120,21 @@ MonoBehaviour:
   fps: 15
   temporaryDrivers:
   - 
+--- !u!114 &2001364012766429699
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7428352607106095403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13714c8ccb3bbdf4e818f13da2e69eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RefillMode: 1
+  CooldownAfterHit: 5
+  RefillHealth: 1
+  HealthPerSecond: 0.2
+  HealthPerBurst: 1
+  DurationBetweenBursts: 5

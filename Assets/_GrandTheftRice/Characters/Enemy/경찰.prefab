@@ -328,7 +328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterDimension: 0
   CharacterType: 1
-  PlayerID: 
+  PlayerID: "\uACBD\uCC30"
   CharacterAnimator: {fileID: 0}
   UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
