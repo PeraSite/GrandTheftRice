@@ -11,7 +11,7 @@ ScriptedImporter:
   textureImporterSettings:
     alphaSource: 1
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     fadeOut: 0
     borderMipMap: 0
     mipMapsPreserveCoverage: 0
@@ -28,7 +28,7 @@ ScriptedImporter:
     ignoreMasterTextureLimit: 0
     nPOTScale: 1
     sRGBTexture: 1
-    spriteMode: 2
+    spriteMode: 1
     spriteExtrude: 1
     spriteMeshType: 1
     alignment: 0
@@ -69,18 +69,18 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: 
+  - name: "\uC704\uB300\uD55C \uBC25\uB3C4\uB451 \uBA54\uC778_1"
     originalName: 
-    pivot: {x: 0, y: 0}
+    pivot: {x: 0.5, y: 0.5}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 0
-      height: 0
-    spriteID: 
+      width: 7210
+      height: 2310
+    spriteID: 9f681e935f5088b45b573ad6d5456a27
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -533,28 +533,6 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 4, y: 4}
     spritePosition: {x: 0, y: 0}
-  - name: "\uC2DC\uC791\uD558\uAE30 \uB7AD\uD0B9 \uD658\uACBD\uC124\uC815 \uB098\uAC00\uAE30"
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 7293
-      y: 10232
-      width: 190
-      height: 262
-    spriteID: c5e6214ad2ec60c4880aca63526204ad
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 7293, y: 10232}
-    spritePosition: {x: 3565, y: 842}
   - name: "\uC704\uB300\uD55C-\uBC25\uB3C4\uB451-\uD0C0\uC774\uD2C0"
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -731,28 +709,6 @@ ScriptedImporter:
     parentGroupIndex: -1
     uvTransform: {x: 7702, y: 9515}
     spritePosition: {x: 824, y: 1873}
-  - name: 1 2 3
-    originalName: 
-    pivot: {x: 0.5, y: 0.5}
-    alignment: 0
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 8128
-      y: 9276
-      width: 55
-      height: 193
-    spriteID: 5c4b70f5a2637aa45a9aedf70355aff6
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    parentGroupIndex: -1
-    uvTransform: {x: 8128, y: 9276}
-    spritePosition: {x: 716, y: 1581}
   - name: SFX
     originalName: 
     pivot: {x: 0.5, y: 0.5}
@@ -945,13 +901,13 @@ ScriptedImporter:
   platformSettings:
   - name: DefaultTexturePlatform
     overridden: 0
-    maxTextureSize: 8192
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
+    crunchedCompression: 1
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
   - name: Standalone
@@ -976,8 +932,8 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  mosaicLayers: 1
-  characterMode: 1
+  mosaicLayers: 0
+  characterMode: 0
   documentPivot: {x: 0, y: 0}
   documentAlignment: 7
   importHiddenLayers: 0
@@ -1230,8 +1186,8 @@ ScriptedImporter:
     layerID: 29
     mosaicPosition: {x: 7293, y: 10232}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: "\uC704\uB300\uD55C-\uBC25\uB3C4\uB451-\uD0C0\uC774\uD2C0"
     spriteName: "\uC704\uB300\uD55C-\uBC25\uB3C4\uB451-\uD0C0\uC774\uD2C0"
     isGroup: 0
@@ -1350,8 +1306,8 @@ ScriptedImporter:
     layerID: 37
     mosaicPosition: {x: 8128, y: 9276}
     flatten: 0
-    isImported: 1
-    isVisible: 1
+    isImported: 0
+    isVisible: 0
   - name: SFX
     spriteName: SFX
     isGroup: 0
