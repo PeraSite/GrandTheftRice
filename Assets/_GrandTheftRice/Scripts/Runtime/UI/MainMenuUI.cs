@@ -1,6 +1,9 @@
-﻿using DG.Tweening.Core;
+﻿using System;
+using DG.Tweening.Core;
+using MoreMountains.Tools;
 using Sirenix.OdinInspector;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace GrandTheftRice.UI {
 	public class MainMenuUI : MonoBehaviour {
@@ -12,6 +15,10 @@ namespace GrandTheftRice.UI {
 		[SerializeField] private float _zoomInZ;
 		[SerializeField] private float _jumpPower;
 
+		[Title("볼륨 슬라이더")]
+		[SerializeField] private Slider _bgmVolumeSlider;
+		[SerializeField] private Slider _sfxVolumeSlider;
+
 
 		[Title("애니메이션 설정")]
 		[SerializeField] private float _animationDuration = 0.5f;
@@ -20,6 +27,13 @@ namespace GrandTheftRice.UI {
 
 		private void Awake() {
 			_cam = Camera.main;
+		}
+
+		private void Start() {
+			_bgmVolumeSlider.value =
+				MMSoundManager.Instance.GetTrackVolume(MMSoundManager.MMSoundManagerTracks.Music, false);
+			_sfxVolumeSlider.value =
+				MMSoundManager.Instance.GetTrackVolume(MMSoundManager.MMSoundManagerTracks.Sfx, false);
 		}
 
 		[Button]
@@ -46,6 +60,16 @@ namespace GrandTheftRice.UI {
 #else
 			Application.Quit();
 #endif
+		}
+
+		public void SetBGMVolume(float volume) {
+			MMSoundManager.Instance.SetTrackVolume(MMSoundManager.MMSoundManagerTracks.Music, volume);
+			MMSoundManager.Instance.SaveSettings();
+		}
+
+		public void SetSFXVolume(float volume) {
+			MMSoundManager.Instance.SetTrackVolume(MMSoundManager.MMSoundManagerTracks.Sfx, volume);
+			MMSoundManager.Instance.SaveSettings();
 		}
 	}
 }
