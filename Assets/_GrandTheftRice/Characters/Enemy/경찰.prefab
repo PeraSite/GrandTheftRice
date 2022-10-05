@@ -288,6 +288,7 @@ GameObject:
   - component: {fileID: 8589810598258588455}
   - component: {fileID: 3504913414388346082}
   - component: {fileID: 552222120254294073}
+  - component: {fileID: 5510722673790737629}
   m_Layer: 13
   m_Name: "\uACBD\uCC30"
   m_TagString: Enemy
@@ -869,6 +870,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   LifeTime: 0
+--- !u!114 &5510722673790737629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5567310459898046150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39297514df904693975cba183eecedd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _killPoint: 3
 --- !u!1 &6777752428885519767
 GameObject:
   m_ObjectHideFlags: 0

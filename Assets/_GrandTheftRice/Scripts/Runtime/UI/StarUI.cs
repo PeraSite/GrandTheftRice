@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using GrandTheftRice.System;
 using Sirenix.Utilities;
 using UnityEngine;
 using UnityEngine.UI;
@@ -9,11 +10,8 @@ namespace GrandTheftRice.UI {
 		[SerializeField] private Sprite _starFull;
 		[SerializeField] private Sprite _starEmpty;
 
-		//TODO: 실제 별 수치 가져오기
-		[SerializeField] private int _currentStar;
-
 		protected virtual void Update() {
-			UpdateUI(_currentStar);
+			UpdateUI(WantedSystem.Instance.CurrentStars);
 		}
 
 		protected virtual void UpdateUI(int current) {

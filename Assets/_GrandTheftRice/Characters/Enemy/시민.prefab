@@ -267,6 +267,7 @@ GameObject:
   - component: {fileID: 413801883614426006}
   - component: {fileID: 1048927099110933611}
   - component: {fileID: 3493045112113721509}
+  - component: {fileID: 622543774062770088}
   m_Layer: 13
   m_Name: "\uC2DC\uBBFC"
   m_TagString: Enemy
@@ -811,6 +812,19 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   LifeTime: 0
+--- !u!114 &622543774062770088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7783640707220733494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39297514df904693975cba183eecedd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _killPoint: 1
 --- !u!1 &9171982283175916903
 GameObject:
   m_ObjectHideFlags: 0
