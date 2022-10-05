@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using DG.Tweening;
-using DG.Tweening.Core;
-using DG.Tweening.Plugins.Options;
 using MoreMountains.Tools;
 using MoreMountains.TopDownEngine;
 using Sirenix.Utilities;
@@ -12,10 +9,12 @@ namespace GrandTheftRice.Characters.Player.Hook {
 	public class HookWeapon : Weapon {
 		[MMInspectorGroup("Hook", true)]
 		[SerializeField] private LineRenderer _lineRenderer;
-		[SerializeField] private float _maxLength = 5f;
 		[SerializeField] private float _stunTime = 1f;
 		[SerializeField] private Ease _ease;
 		[SerializeField] private float _force = 500f;
+		
+		[Tooltip("특수 공격 길이")]
+		public float AttackRange = 5f;
 
 		private float _lineCompletePercent;
 		private Vector3 _targetPosition;
@@ -48,7 +47,7 @@ namespace GrandTheftRice.Characters.Player.Hook {
 			_handleWeapon.PermitAbility(false);
 			_lineRenderer.SetPosition(0, transform.position);
 			_lineRenderer.SetPosition(1, transform.position);
-			_targetPosition = (GetMousePosition() - transform.position).normalized * _maxLength + transform.position;
+			_targetPosition = (GetMousePosition() - transform.position).normalized * AttackRange + transform.position;
 			_lineCompletePercent = 0f;
 			_isHit = false;
 			_lineRenderer.enabled = true;
