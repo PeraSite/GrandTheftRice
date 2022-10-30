@@ -583,7 +583,7 @@ MonoBehaviour:
           TargetBPM: 120
         Owner: {fileID: 5799343421129025718}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 6f10d771e7aa4234c90db4da16c32b0d, type: 3}
+        Sfx: {fileID: 8300000, guid: ac6a9a4825b9c784c8cf070c0356bd25, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound

@@ -20368,15 +20368,15 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 592d080ffbf62d9469ec0da3a406bd08, type: 3}
+  Sfx: {fileID: 8300000, guid: f11306bca6036af4fa67d10e9543595b, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 1
+  MinVolume: 0.8
   MaxVolume: 1
-  MinPitch: 1
+  MinPitch: 0.9
   MaxPitch: 1
   SfxAudioMixerGroup: {fileID: 0}
 --- !u!114 &7140313329868587272

@@ -5032,7 +5032,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 3f6b0a334e5a4b44cab8e9afcdf6899a, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -10010,7 +10009,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -14951,7 +14949,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6585f21f352bd2d428e39c0353cdc7ae, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15166,7 +15163,7 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 84a9746d4ee81e841b689a625e33c590, type: 3}
+  Sfx: {fileID: 8300000, guid: f11306bca6036af4fa67d10e9543595b, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
@@ -15377,14 +15374,14 @@ MonoBehaviour:
     Quantized: 0
     TargetBPM: 120
   DebugActive: 0
-  Sfx: {fileID: 8300000, guid: 84a9746d4ee81e841b689a625e33c590, type: 3}
+  Sfx: {fileID: 8300000, guid: f11306bca6036af4fa67d10e9543595b, type: 3}
   RandomSfx: []
   TestButton: 0
   TestStopButton: 0
   PlayMethod: 0
   PoolSize: 10
-  MinVolume: 0.5
-  MaxVolume: 0.7
-  MinPitch: 1
-  MaxPitch: 1
+  MinVolume: 0.3
+  MaxVolume: 0.5
+  MinPitch: 0.7
+  MaxPitch: 0.8
   SfxAudioMixerGroup: {fileID: 0}
